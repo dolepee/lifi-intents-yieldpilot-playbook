@@ -2,6 +2,8 @@
 
 A before/after playbook showing how YieldPilot's multi-step cross-chain yield move collapses into one solver-backed LI.FI Intent.
 
+![YieldPilot rewritten as one LI.FI Intent](./diagrams/yieldpilot-intents-card.svg)
+
 YieldPilot v1, built at the last LI.FI hackathon, orchestrated a stablecoin yield move as separate route steps: scan balances, rank vaults, quote execution, then track the move. This playbook keeps the same user problem but changes the execution model: the user expresses the desired destination outcome, a solver quote prices the required input, escrow holds the payment, and the frontend follows one order lifecycle.
 
 ## Why This Exists

@@ -1,0 +1,78 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">YieldPilot to LI.FI Intents</title>
+  <desc id="desc">A social card comparing YieldPilot v1 multi-step execution with one LI.FI Intent lifecycle.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06130F"/>
+      <stop offset="0.48" stop-color="#0A241A"/>
+      <stop offset="1" stop-color="#D8FF57"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(921 124) rotate(139.233) scale(613 426.721)">
+      <stop stop-color="#F8FFB0" stop-opacity="0.92"/>
+      <stop offset="0.36" stop-color="#5CFF9A" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#06130F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 52 0 L 0 0 0 52" stroke="#E8FFE7" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+
+  <circle cx="1031" cy="110" r="182" fill="#ECFF6C" fill-opacity="0.16"/>
+  <circle cx="120" cy="618" r="220" fill="#45FF97" fill-opacity="0.08"/>
+
+  <g transform="translate(62 58)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="#EFFF72"/>
+    <text x="90" y="31" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="800" fill="#07110D">LI.FI INTENTS</text>
+  </g>
+
+  <text x="62" y="176" font-family="Arial Black, Arial, sans-serif" font-size="74" font-weight="900" fill="#FBF7E8" letter-spacing="-3">
+    YieldPilot, rewritten
+  </text>
+  <text x="62" y="249" font-family="Arial Black, Arial, sans-serif" font-size="74" font-weight="900" fill="#FBF7E8" letter-spacing="-3">
+    as one intent.
+  </text>
+
+  <text x="64" y="305" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600" fill="#D4E4D2">
+    From bridge + swap + deposit to fixed output, solver quote,
+  </text>
+  <text x="64" y="341" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600" fill="#D4E4D2">
+    escrowed input, StandardOrder, and one status lifecycle.
+  </text>
+
+  <g transform="translate(62 407)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="493" height="191" rx="30" fill="#101B17" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="32" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="900" fill="#FF867A" letter-spacing="3">BEFORE</text>
+    <text x="32" y="99" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="900" fill="#FBF7E8">Multi-step routing</text>
+    <text x="32" y="138" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="700" fill="#BAC9BD">bridge -&gt; swap -&gt; deposit/yield</text>
+    <text x="32" y="170" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="600" fill="#7F9386">More signatures. More state to track.</text>
+  </g>
+
+  <path d="M581 502 C621 501 642 501 682 502" stroke="#EFFF72" stroke-width="7" stroke-linecap="round"/>
+  <path d="M657 477 L686 502 L657 527" stroke="#EFFF72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(707 366)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="431" height="261" rx="34" fill="#F8FFE9" stroke="#07110D" stroke-opacity="0.18"/>
+    <text x="32" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="900" fill="#0B3220" letter-spacing="3">AFTER</text>
+    <text x="32" y="107" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#07110D">One intent</text>
+
+    <g transform="translate(32 139)">
+      <rect x="0" y="0" width="367" height="46" rx="23" fill="#0A241A"/>
+      <text x="22" y="30" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="800" fill="#DFFF67">100 USDC on Arbitrum</text>
+    </g>
+    <text x="32" y="217" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800" fill="#0B3220">solver quote - escrow - StandardOrder</text>
+    <text x="32" y="244" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#405347">Built as a developer playbook, not a wallet app.</text>
+  </g>
+
+  <g transform="translate(62 627)">
+    <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="900" fill="#DDFD8B" letter-spacing="2">
+      npm run demo:live  /  LIFI_INTENTS_YIELDPILOT_PLAYBOOK_READY
+    </text>
+  </g>
+</svg>
