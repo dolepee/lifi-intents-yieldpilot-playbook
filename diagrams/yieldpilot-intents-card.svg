@@ -66,13 +66,13 @@
       <rect x="0" y="0" width="367" height="46" rx="23" fill="#0A241A"/>
       <text x="22" y="30" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="800" fill="#DFFF67">100 USDC on Arbitrum</text>
     </g>
-    <text x="32" y="217" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800" fill="#0B3220">solver quote - escrow - StandardOrder</text>
-    <text x="32" y="244" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#405347">Built as a developer playbook, not a wallet app.</text>
+    <text x="32" y="211" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800" fill="#0B3220">solver quote - escrow</text>
+    <text x="32" y="238" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800" fill="#0B3220">StandardOrder - status</text>
   </g>
 
   <g transform="translate(62 627)">
-    <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="900" fill="#DDFD8B" letter-spacing="2">
-      npm run demo:live  /  LIFI_INTENTS_YIELDPILOT_PLAYBOOK_READY
+    <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" font-weight="900" fill="#DDFD8B" letter-spacing="2">
+      npm run demo:live  /  live quote + fixture fallback
     </text>
   </g>
 </svg>
