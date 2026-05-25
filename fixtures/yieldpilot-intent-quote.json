@@ -13,7 +13,7 @@
           "chainId": 8453,
           "user": "0x0001000002210514d8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
           "token": "USDC",
-          "asset": "0x0001000002210514833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "asset": "0x0001000002210514833589fcd6edb6e08f4c7c32d4f71b54bda02913",
           "amount": null
         }
       ],
@@ -24,7 +24,7 @@
           "chainId": 42161,
           "token": "USDC",
           "receiver": "0x0001000002A4B114d8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
-          "asset": "0x0001000002A4B114af88d065e77c8cC2239327C5EDb3A432268e5831",
+          "asset": "0x0001000002a4b114af88d065e77c8cc2239327c5edb3a432268e5831",
           "amount": "100000000"
         }
       ]

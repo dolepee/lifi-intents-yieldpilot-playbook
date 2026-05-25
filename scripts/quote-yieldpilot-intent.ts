@@ -122,11 +122,16 @@ function toDecimalAmount(amount: string, decimals = 6): string {
 }
 
 async function fetchLiveQuote(base: QuoteFixture): Promise<QuoteFixture> {
-  const response = await fetch(quoteUrl, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(base.request)
-  });
+  let response: Response;
+  try {
+    response = await fetch(quoteUrl, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(base.request)
+    });
+  } catch (error) {
+    throw new Error(`network error calling ${quoteUrl}: ${formatError(error)}`);
+  }
 
   if (!response.ok) {
     throw new Error(`LI.FI quote request failed: ${response.status} ${await response.text()}`);
@@ -168,6 +173,12 @@ async function fetchLiveQuote(base: QuoteFixture): Promise<QuoteFixture> {
       ]
     }
   };
+}
+
+function formatError(error: unknown): string {
+  if (!(error instanceof Error)) return String(error);
+  const cause = error.cause instanceof Error ? `; cause=${error.cause.message}` : "";
+  return `${error.message}${cause}`;
 }
 
 function toOutputShape(quote: QuoteFixture, warning?: string) {

@@ -64,6 +64,8 @@ LIFI_INTENTS_QUOTE_URL="https://order.li.fi/quote/request" npm run demo:live
 
 If the live endpoint rejects the route or the launch-day API changes, the script falls back to the fixture and prints the same output shape. That keeps the deliverable reproducible while still showing exactly where the live quote belongs.
 
+Implementation note: LI.FI Intents use ERC-7930 interoperable addresses for `user`, `asset`, and `receiver` fields. The quote endpoint accepted the live request only after the asset bytes were lower-cased, so the fixture keeps the Base and Arbitrum USDC asset values lower-case.
+
 ## What The Script Prints
 
 - input chain and token
