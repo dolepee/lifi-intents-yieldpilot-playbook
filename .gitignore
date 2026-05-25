@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+
+# Keep private recording and submission notes out of this bundle.
+DEMO_SCRIPT*
+demo-script*
+*-demo-script*
+SUBMISSION*
+submission*
+docs/*SUBMISSION*

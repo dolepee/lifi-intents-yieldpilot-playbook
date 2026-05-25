@@ -1,0 +1,81 @@
+{
+  "source": "fixture",
+  "scenario": "YieldPilot v1 cross-chain stablecoin yield move as one LI.FI Intent",
+  "request": {
+    "user": "0x0001000002210514d8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+    "intent": {
+      "intentType": "oif-swap",
+      "swapType": "exact-output",
+      "inputs": [
+        {
+          "label": "Base USDC payment",
+          "chain": "Base",
+          "chainId": 8453,
+          "user": "0x0001000002210514d8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+          "token": "USDC",
+          "asset": "0x0001000002210514833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "amount": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Arbitrum USDC destination yield leg",
+          "chain": "Arbitrum",
+          "chainId": 42161,
+          "token": "USDC",
+          "receiver": "0x0001000002A4B114d8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+          "asset": "0x0001000002A4B114af88d065e77c8cC2239327C5EDb3A432268e5831",
+          "amount": "100000000"
+        }
+      ]
+    },
+    "supportedTypes": ["oif-escrow-v0"]
+  },
+  "quote": {
+    "quoteId": "quote_yieldpilot_fixture_001",
+    "validUntil": 1780000000,
+    "inputSettler": "0x000025c3a23f72c59f0f4cfb6d34e3ba9f4e00c0",
+    "requiredInputAmount": "100370000",
+    "requiredInputToken": "USDC",
+    "fixedOutputAmount": "100000000",
+    "fixedOutputToken": "USDC",
+    "failureHandling": "refund-automatic",
+    "partialFill": false,
+    "metadata": {
+      "exclusiveFor": null,
+      "solverModel": "standing-quote inventory"
+    }
+  },
+  "standardOrder": {
+    "user": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+    "nonce": "202605260001",
+    "originChainId": "8453",
+    "expires": 1780000600,
+    "fillDeadline": 1780000300,
+    "inputOracle": "0x0000003E06000007A224AeE90052fA6bb46d43C9",
+    "inputs": [
+      [
+        "934287164031250000000000000000000000000000000000",
+        "100370000"
+      ]
+    ],
+    "outputs": [
+      {
+        "oracle": "0x0000000000000000000000000000003E06000007A224AeE90052fA6bb46d43C9",
+        "settler": "0x0000000000000000000000000000000000eC36B683C2E6AC89e9A75989C22a2e",
+        "chainId": "42161",
+        "token": "0x000000000000000000000000af88d065e77c8cC2239327C5EDb3A432268e5831",
+        "amount": "100000000",
+        "recipient": "0x000000000000000000000000d8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+        "call": "0x",
+        "context": "0x"
+      }
+    ]
+  },
+  "tracking": {
+    "openEvent": "Open(bytes32 indexed orderId, bytes order)",
+    "orderIdPreview": "0x7a9f7b4f9e1b900f000000000000000000000000000000000000000000000001",
+    "statusEndpoint": "https://order.li.fi/orders/status?onChainOrderId=0x7a9f7b4f9e1b900f000000000000000000000000000000000000000000000001",
+    "terminalStates": ["Delivered", "Settled"]
+  }
+}

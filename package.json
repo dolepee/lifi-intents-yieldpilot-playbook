@@ -1,0 +1,22 @@
+{
+  "name": "lifi-intents-yieldpilot-playbook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "YieldPilot before/after playbook for LI.FI Intents.",
+  "scripts": {
+    "demo": "tsx scripts/quote-yieldpilot-intent.ts --fixture",
+    "demo:json": "tsx scripts/quote-yieldpilot-intent.ts --fixture --json",
+    "demo:live": "tsx scripts/quote-yieldpilot-intent.ts --live",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run demo"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
