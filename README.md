@@ -50,7 +50,7 @@ Expected marker:
 LIFI_INTENTS_YIELDPILOT_PLAYBOOK_READY
 ```
 
-The default command uses a fixture so the artifact is stable during the 24-hour challenge window.
+The default command uses a fixture so the artifact is stable during the launch submission window.
 
 To try the live quote path:
 
